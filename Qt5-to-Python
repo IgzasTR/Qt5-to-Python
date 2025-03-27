@@ -5,3 +5,18 @@
 
 
 pyuic5 -o calculator.py calculator.ui   
+
+5- Dosyanın çalışabilmesi için bazı kodların eklenmesi gerekir:
+from PyQt5.QtWidgets import QApplication, QMainWindow
+import sys
+
+class MainWindow(QMainWindow, Ui_MainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)  # GUI'yi başlatıyoruz
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)  # QApplication nesnesini başlatıyoruz
+    window = MainWindow()  # MainWindow sınıfını başlatıyoruz
+    window.show()  # Pencereyi gösteriyoruz
+    sys.exit(app.exec_())  # Uygulamanın çalışmasını başlatıyoruz
