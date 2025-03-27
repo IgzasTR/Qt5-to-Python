@@ -1,0 +1,7 @@
+1- Tasarımı bitir.
+2- Farklı kaydet ile python dosyanının olduğu yere .ui formatında kaydet.
+3-Terminal de pyuic5 -o calculator.py calculator.ui   kodunu çalıştır.
+4-Aynı dosyada calculator.py dosyasının içerisine tüm python kodlarının eklendiğini kontrol et :).
+
+
+pyuic5 -o calculator.py calculator.ui   
